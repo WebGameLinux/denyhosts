@@ -79,7 +79,7 @@ near the top:
     #DENYHOSTS_BIN   = "/usr/bin/denyhosts.py"
     
     DENYHOSTS_BIN   = "/usr/local/bin/denyhosts.py"
-   
+    
     DENYHOSTS_LOCK  = "/var/lock/subsys/denyhosts"
     
     DENYHOSTS_CFG   = "/etc/denyhosts.conf"
