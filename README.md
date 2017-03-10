@@ -76,8 +76,9 @@ near the top:
     #### Edit these to suit your configuration ####
     ###############################################
 
-    DENYHOSTS_BIN   = "/usr/bin/denyhosts.py"
-    DENYHOSTS_LOCK  = "/var/lock/subsys/denyhosts"
+    #DENYHOSTS_BIN   = "/usr/bin/denyhosts.py"
+    DENYHOSTS_BIN   = "/usr/local/bin/denyhosts.py"
+    DENYHOSTS_LOCK  = "/var/lock/subsys/denyhosts"
     DENYHOSTS_CFG   = "/etc/denyhosts.conf"
 
 
@@ -147,3 +148,15 @@ Add an entry into the /etc/rc.local file:
 
     /usr/share/denyhosts/daemon-control start
 
+Ubuntu or Centos 
+------
+
+use systemclt to start:
+
+    $sudo cp denyhosts.service /lib/systemd/system/
+    [$ sysv-rc-conf #choose with system start level (ubuntu)]
+    [$ chkconfig --add denghosts # centos 6.5]
+    $ systemclt  daemon-reload
+    $ systemclt enable denyhosts
+    $ systeclt start denyhosts
+   
