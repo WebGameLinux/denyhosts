@@ -75,10 +75,13 @@ near the top:
     ###############################################
     #### Edit these to suit your configuration ####
     ###############################################
-
-    #DENYHOSTS_BIN   = "/usr/bin/denyhosts.py"
+    
+    #DENYHOSTS_BIN   = "/usr/bin/denyhosts.py"
+    
     DENYHOSTS_BIN   = "/usr/local/bin/denyhosts.py"
-    DENYHOSTS_LOCK  = "/var/lock/subsys/denyhosts"
+   
+    DENYHOSTS_LOCK  = "/var/lock/subsys/denyhosts"
+    
     DENYHOSTS_CFG   = "/etc/denyhosts.conf"
 
 
